@@ -1,0 +1,7 @@
+github
+hostmeta
+hostmetaget
+https
+ssh
+ubuntu
+workarounds
