@@ -58,7 +58,7 @@ func NewPassword(password string) error {
 	}
 
 	if err := pwv.Validate(password, minimumPasswordEntropy); err != nil {
-		// Modify error message to include percentage requred entropy the password has
+		// Modify error message to include percentage required entropy the password has
 		percent := int(100 * pwv.GetEntropy(password) / minimumPasswordEntropy)
 		return errors.New(strings.ReplaceAll(
 			err.Error(),
@@ -66,7 +66,7 @@ func NewPassword(password string) error {
 			fmt.Sprintf("password is only %d%% strength", percent)))
 	}
 
-	return nil // pasword OK
+	return nil // password OK
 }
 
 // Username makes sure that a given username is valid (ie., letters, numbers, underscores, check length).

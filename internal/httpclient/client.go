@@ -74,7 +74,7 @@ type Config struct {
 	// AllowRanges allows outgoing communications to given IP nets.
 	AllowRanges []netip.Prefix
 
-	// BlockRanges blocks outgoing communiciations to given IP nets.
+	// BlockRanges blocks outgoing communications to given IP nets.
 	BlockRanges []netip.Prefix
 }
 
@@ -214,7 +214,7 @@ func (c *Client) Do(req *http.Request) (*http.Response, error) {
 		return nil, ErrBodyTooLarge
 	}
 
-	// Seperate the body implementers
+	// Separate the body implementers
 	rbody := (io.Reader)(rsp.Body)
 	cbody := (io.Closer)(rsp.Body)
 

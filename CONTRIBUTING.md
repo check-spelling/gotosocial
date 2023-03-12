@@ -41,11 +41,11 @@ This document contains important information that will help you to write a succe
 
 ## Bug reports and feature requests
 
-Currently, we use Github's issue system for tracking bug reports and feature requests.
+Currently, we use GitHub's issue system for tracking bug reports and feature requests.
 
-You can view all open issues [here](https://github.com/superseriousbusiness/gotosocial/issues "The Github Issues page for GoToSocial").
+You can view all open issues [here](https://github.com/superseriousbusiness/gotosocial/issues "The GitHub Issues page for GoToSocial").
 
-Before opening a new issue, whether bug or feature request, **please search carefully through both open and closed issues to make sure it hasn't been addressed already**. You can use Github's keyword issue search for this. If your issue is a duplicate of an existing issue, it will be closed.
+Before opening a new issue, whether bug or feature request, **please search carefully through both open and closed issues to make sure it hasn't been addressed already**. You can use GitHub's keyword issue search for this. If your issue is a duplicate of an existing issue, it will be closed.
 
 Before you open a feature request issue, please consider the following:
 
@@ -424,7 +424,7 @@ Although this test *is* part of the CI/CD testing process, you probably won't ne
 By using the support for loading TLS files from disk it is possible to have two local instances with TLS to allow for (manually) testing federation.
 
 You'll need to set the following configuration options:
-* `GTS_TLS_CERTIFICATE_CHAIN`: poiting to a PEM-encoded certificate chain including the public certificate
+* `GTS_TLS_CERTIFICATE_CHAIN`: pointing to a PEM-encoded certificate chain including the public certificate
 * `GTS_TLS_CERTIFICATE_KEY`: pointing to a PEM-encoded private key
 
 Additionally, for the Go HTTP client to recognise certificates issued by a custom CA as valid, you'll need to set one of:

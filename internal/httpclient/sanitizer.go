@@ -42,7 +42,7 @@ func (s *sanitizer) Sanitize(ntwrk, addr string, _ syscall.RawConn) error {
 		return ErrInvalidNetwork
 	}
 
-	// Seperate the IP
+	// Separate the IP
 	ip := ipport.Addr()
 
 	// Check if this is explicitly allowed
@@ -52,7 +52,7 @@ func (s *sanitizer) Sanitize(ntwrk, addr string, _ syscall.RawConn) error {
 		}
 	}
 
-	// Now check if explicity blocked
+	// Now check if explicitly blocked
 	for i := 0; i < len(s.block); i++ {
 		if s.block[i].Contains(ip) {
 			return ErrReservedAddr
